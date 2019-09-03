@@ -1,19 +1,20 @@
 {
   "name": "react-native-parsed-text",
-  "version": "0.0.21",
+  "version": "0.0.22",
   "description": "Parse text and make them into multiple React Native Text elements",
   "main": "src/ParsedText.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "prepare": "npm run build"
   },
   "bugs": {
-    "url": "https://github.com/taskrabbit/react-native-parsed-text/issues"
+    "url": "https://github.com/r1ckyrockz/react-native-parsed-text/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/taskrabbit/react-native-parsed-text.git"
+    "url": "git+ssh://git@github.com/r1ckyrockz/react-native-parsed-text.git"
   },
-  "homepage": "https://github.com/taskrabbit/react-native-parsed-text#readme",
+  "homepage": "https://github.com/r1ckyrockz/react-native-parsed-text#readme",
   "keywords": [
     "text",
     "react-native",
@@ -27,19 +28,19 @@
     "react-native": "*"
   },
   "devDependencies": {
-    "@babel/core": "7.1.5",
+    "@babel/core": "7.5.5",
     "babel-core": "^7.0.0-bridge.0",
-    "babel-jest": "23.6.0",
-    "jest": "23.6.0",
-    "metro-react-native-babel-preset": "0.49.0",
-    "react-native": "0.57.4",
-    "react-test-renderer": "16.6.0-alpha.8af6728",
-    "react": "16.6.0-alpha.8af6728"
+    "babel-jest": "24.9.0",
+    "jest": "24.9.0",
+    "metro-react-native-babel-preset": "0.56.0",
+    "react": "16.9.0",
+    "react-native": "^0.60.5",
+    "react-test-renderer": "16.9.0"
   },
-  "author": "jrichardlai",
+  "author": "r1ckyrockz",
   "license": "MIT",
   "dependencies": {
-    "prop-types": "^15.5.10"
+    "prop-types": "^15.7.2"
   },
   "jest": {
     "preset": "react-native"
