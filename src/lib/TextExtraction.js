@@ -18,6 +18,7 @@ class TextExtraction {
     let parsedTexts = [{children: this.text}];
     this.patterns.forEach((pattern) => {
       let newParts = [];
+      let regexPattern = new RegExp(pattern.pattern);
 
       parsedTexts.forEach((parsedText) => {
         // Only allow for now one parsing
@@ -32,7 +33,7 @@ class TextExtraction {
         let indexOfMatchedString = 0;
 
         while (textLeft) {
-          let matches = pattern.pattern.exec(textLeft);
+          let matches = regexPattern.exec(textLeft);
 
           if (!matches) { break; }
 
