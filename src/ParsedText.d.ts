@@ -3,20 +3,20 @@ declare module 'react-native-parsed-text' {
   import { TextProps } from 'react-native';
 
   interface BaseParseShape extends Pick<TextProps, Exclude<keyof TextProps, 'onPress' | 'onLongPress' >> {
-    renderText?: (matchingString: string) => string;
+    renderText?: (matchString: string, matches: string[]) => string;
     onPress?: (text: string, index: number) => void;
     onLongPress?: (text: string, index: number) => void;
   }
 
   interface DefaultParseShape extends BaseParseShape {
-    type: 'url' | 'phone' | 'email';
+    type?: 'url' | 'phone' | 'email';
   }
 
   interface CustomParseShape extends BaseParseShape {
     pattern: string | RegExp;
   }
 
-  type ParseShape = DefaultParseShape | CustomParseShape;
+  export type ParseShape = DefaultParseShape | CustomParseShape;
 
   export interface ParsedTextProps extends TextProps {
     parse?: ParseShape[];
