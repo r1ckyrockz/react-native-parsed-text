@@ -1,11 +1,10 @@
 {
   "name": "react-native-parsed-text",
-  "version": "0.0.23",
-  "description": "Parse text and make them into multiple React Native Text elements",
+  "version": "0.1.0",
+  "description": "Parse react native text with markdowns",
   "main": "src/ParsedText.js",
   "scripts": {
-    "test": "jest",
-    "prepare": "npm run build"
+    "test": "jest"
   },
   "bugs": {
     "url": "https://github.com/r1ckyrockz/react-native-parsed-text/issues"
