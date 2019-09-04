@@ -1,6 +1,6 @@
 {
   "name": "react-native-better-parsed-text",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Parse react native text with markdowns",
   "main": "src/ParsedText.js",
   "scripts": {
