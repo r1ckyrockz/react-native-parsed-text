@@ -1,4 +1,4 @@
-declare module 'react-native-parsed-text' {
+declare module 'react-native-better-parsed-text' {
   import { Component } from 'react';
   import { TextProps } from 'react-native';
 
